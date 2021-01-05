@@ -59,6 +59,14 @@ header {
   }
 }
 
+#gallery {
+  @apply p-0;
+  & img {
+    @apply object-contain w-full;
+    max-height: 80vh;
+  }
+}
+
 footer {
   @apply p-4 uppercase; 
 }

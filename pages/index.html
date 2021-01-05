@@ -12,14 +12,19 @@
         <small>ristrutturazioni e costruzioni</small>
     </h1>
    </div>
-    <div class="flex  flex-wrap md:flex-row-reverse">
-        <section class="w-full md:w-1/3 invert">
+    <div class="flex flex-wrap">
+        <section class="w-full md:w-1/3 md:pl-8 invert">
             <h2>Chi sono</h2>
             <p class="uppercase my-4">20 anni di esperienza e oltre 35 cantieri attivi nell'ultimo biennio.</p>
             <p>Sono Roberto Caruso e lavoro a Torino, Piemonte e dintorni. Ho 40 anni e ho fatto lavori di ristrutturazione e costruzione per tutta la vita. Non solo ristrutturazioni: recupero di facciate, restauro di opere antiche, dipinti e affreschi sono altri dei servizi che offro.</p>
         </section>
-        <section class="w-full md:w-2/3">
-            gallery
+        <section id="gallery" class="w-full md:w-2/3">
+            <swiper ref="mySwiper" :options="swiperOptions">
+                <swiper-slide :key="index" v-for="(banner, index) in banners">                
+                    <img :src="banner.url" :alt="banner.alt">                    
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
         </section>
     </div> 
     <div class="flex flex-wrap md:mt-8">
