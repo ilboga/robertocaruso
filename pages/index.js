@@ -12,8 +12,7 @@ export default {
   data() {
     return {
       banners: [ 
-          {url: require('~/assets/images/lavoro.jpeg'), alt: 'La prima img'},
-          {url: require('~/assets/images/piastrellatura.jpeg'), alt: 'La prima img'},
+          {url: require('~/assets/images/lavoro.jpeg'), alt: 'La prima img'},          
           {url: require('~/assets/images/piastrellatura_2.jpeg'), alt: 'La prima img'},
           {url: require('~/assets/images/tetto.jpeg'), alt: 'La prima img'}
         ],
@@ -23,7 +22,16 @@ export default {
         },
         pagination: {
           el: '.swiper-pagination'
-        }        
+        },
+        breakpoints: {          
+          // when window width is >= 640px
+          1024: {
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }       
       }
     }
   }

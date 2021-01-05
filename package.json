@@ -19,6 +19,7 @@
     "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.1.0"
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "tailwindcss-visuallyhidden": "^1.0.2"
   }
 }

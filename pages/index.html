@@ -1,11 +1,25 @@
 <div class="container mx-auto">
     <header>
         <ul>
-            <li><a href="tel:+393471681821">Tel. +39 347 16 81 821</a> </li>
-            <li><a href="mailto:info@caruso-ristrutturazioni.com">info@caruso-ristrutturazioni.com</a> </li>
+            <li>
+                <a href="mailto:info@caruso-ristrutturazioni.com" class="flex flex-wrap items-center">
+                    <icon-envelope class="w-8 mr-4">
+                        <span class="visuallyhidden">info@caruso-ristrutturazioni.com</span>
+                    </icon-envelope>
+                    <span class="hidden md:block">info@caruso-ristrutturazioni.com</span>
+                </a> 
+            </li>
+            <li>
+                <a href="tel:+393471681821" class="flex flex-wrap items-center">
+                    <icon-phone class="w-8 mr-4">
+                        <span class="visuallyhidden">Tel. +39 347 16 81 821</span>
+                    </icon-phone>
+                    <span class="hidden lg:block">Tel. +39 347 16 81 821</span>
+                </a> 
+            </li>
         </ul>
     </header> 
-   <div class="flex my-8">
+   <div class="flex my-4 md:my-8">
     <div class="bg-primary flex-grow"></div>
     <h1 class="title">
         Caruso
@@ -19,7 +33,7 @@
             <p>Sono Roberto Caruso e lavoro a Torino, Piemonte e dintorni. Ho 40 anni e ho fatto lavori di ristrutturazione e costruzione per tutta la vita. Non solo ristrutturazioni: recupero di facciate, restauro di opere antiche, dipinti e affreschi sono altri dei servizi che offro.</p>
         </section>
         <section id="gallery" class="w-full md:w-2/3">
-            <swiper ref="mySwiper" :options="swiperOptions">
+            <swiper ref="mySwiper" :options="swiperOptions" class="md:ml-8">
                 <swiper-slide :key="index" v-for="(banner, index) in banners">                
                     <img :src="banner.url" :alt="banner.alt">                    
                 </swiper-slide>

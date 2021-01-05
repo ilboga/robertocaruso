@@ -50,12 +50,12 @@ header {
 }
 
 .title {
-  @apply uppercase leading-10 py-8 px-4;  
-  font-size: 14rem;  
-  line-height: 12.5rem;
+  @apply uppercase px-4;  
+  font-size: 4rem;
+  line-height: 4.2rem;
   & small {
-    @apply leading-3 block;
-    font-size: 2rem;     
+    @apply leading-8 block;
+    font-size: 1.8rem;     
   }
 }
 
@@ -69,4 +69,25 @@ header {
 
 footer {
   @apply p-4 uppercase; 
+}
+
+
+@media  (min-width: 768px) {
+  .title {    
+    font-size: 8rem;  
+    line-height: 7.2rem;
+     & small {      
+      font-size: 1.8rem;     
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {    
+    font-size: 14rem;  
+    line-height: 11.2rem;
+     & small {      
+      font-size: 2.8rem;     
+    }
+  }
 }
