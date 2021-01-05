@@ -1,4 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   theme: {
     extend: {
@@ -7,7 +6,7 @@ module.exports = {
         'on-primary': '#D9C187'
       },
       fontFamily: {
-        sans: ["Archivo Black", ...defaultTheme.fontFamily.sans]
+        sans: ['Archivo Black', 'Source Sans Pro', 'Arial', 'sans-serif']
       }
     }
   },
