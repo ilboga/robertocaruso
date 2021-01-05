@@ -1,0 +1,64 @@
+body {
+  @apply font-sans overflow-x-hidden;
+  font-size: 1.2rem;  
+  background-color: #D9C187;
+  color: #7A001F;
+}
+
+ul {
+  @apply ml-4 my-4;  
+  list-style-type: square;
+}
+
+/* Typography */
+h1 {
+  font-size: 5rem;  
+}
+
+h2 {
+  @apply uppercase leading-tight;
+  font-size: 2rem;
+  &:before{
+    background-color: #7A001F;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+    content: "";
+  }
+}
+
+/* Utilities */
+section {
+  @apply p-4;
+}
+.invert {
+  @apply bg-primary text-on-primary;
+  & h2 {  
+    &:before{
+      background-color: #D9C187;    
+    }
+  }
+}
+
+/* Layout */
+header {
+  @apply bg-primary text-on-primary p-4 uppercase;
+  & ul {
+    @apply flex justify-between list-none m-0;
+  }
+}
+
+.title {
+  @apply uppercase leading-10 py-8 px-4;  
+  font-size: 14rem;  
+  line-height: 12.5rem;
+  & small {
+    @apply leading-3 block;
+    font-size: 2rem;     
+  }
+}
+
+footer {
+  @apply p-4 uppercase; 
+}

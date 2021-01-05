@@ -1,0 +1,22 @@
+{
+  "name": "caruso-ristrutturazioni",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/google-fonts": "^1.2.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/svg": "^0.1.12",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.1.0"
+  }
+}
