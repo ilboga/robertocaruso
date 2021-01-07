@@ -33,8 +33,7 @@
         <section id="gallery" class="w-full md:w-2/3">
             <div class="md:ml-8 overflow-hidden">
                 <swiper ref="mySwiper" :options="swiperOptions">
-                    <swiper-slide :key="index" v-for="(image, index) in gallery">                
-                        {{image.image_caption}}
+                    <swiper-slide :key="index" v-for="(image, index) in gallery">                                        
                         <img :src="image.gallery_image.url">                    
                     </swiper-slide>
                     <div class="swiper-pagination" slot="pagination"></div>
