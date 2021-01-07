@@ -26,20 +26,24 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [    
+    '@nuxtjs/prismic',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [    
-    '@nuxtjs/axios',    
     '@nuxtjs/pwa',
     '@nuxtjs/svg'
   ],
 
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
-
+  prismic: {
+    endpoint: 'https://robertocaruso.cdn.prismic.io/api/v2',
+    linkResolver: function(doc) {
+      return '/'
+    } 
+  },
+  
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     'html.minify' :{

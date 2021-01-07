@@ -9,6 +9,19 @@ export default {
   directives: {
     swiper: directive
   },
+  async asyncData({ $prismic, error }) {
+    const document = await $prismic.api.getSingle('hero')
+
+    if (document) {
+      return { 
+        gallery : document.data.body[0].items.map(e => {
+          return e
+        }) 
+      }
+    } else {
+      error({ statusCode: 404, message: 'Page not found' })
+    }
+  },
   data() {
     return {
       banners: [ 
