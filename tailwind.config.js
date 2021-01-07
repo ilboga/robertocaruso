@@ -6,7 +6,7 @@ module.exports = {
         'on-primary': '#D9C187'
       },
       fontFamily: {
-        sans: ['Archivo Black', 'Source Sans Pro', 'Arial', 'sans-serif']
+        sans: ["Archivo Black", 'Source Sans Pro', 'Arial', 'sans-serif']
       }
     }
   },
