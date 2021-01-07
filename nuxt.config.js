@@ -40,7 +40,7 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  // Build Configuration (https://go.nuxtjs.devw f/config-build)
   build: {
     'html.minify' :{
       collapseBooleanAttributes: true,
