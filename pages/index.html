@@ -34,7 +34,7 @@
             <div class="md:ml-8 overflow-hidden">
                 <swiper ref="mySwiper" :options="swiperOptions">
                     <swiper-slide :key="index" v-for="(banner, index) in banners">                
-                        <img :src="banner.url" :alt="banner.alt">                    
+                        <img loading="lazy" :src="banner.url" :alt="banner.alt">                    
                     </swiper-slide>
                     <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
